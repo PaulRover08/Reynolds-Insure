@@ -29,9 +29,37 @@ html, body, p, td {
 
 #header_wrapper {
 	width: 980px;
-	height: 100px;
+	height: 515px;
 	margin: 0px;
 	padding: 0px;
+}
+
+#headerImage {
+    position:relative;
+    height:515px;
+}
+
+#headerImage IMG {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+}
+
+#headerImage IMG.active {
+    z-index:10;
+}
+
+#headerImage IMG.last-active {
+    z-index:9;
+}
+
+#header_content {
+	width: 980px;
+	height: 515px;
+	margin: -515px 0px 0px 0px;
+	position: relative;
+	z-index: 11;
 }
 
 /* CONTENT */
